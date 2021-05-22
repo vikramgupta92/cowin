@@ -6,15 +6,4 @@
       <class name="org.automation.cowin.testcases.TC_001VerifyVaccinationBooking"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="org.automation.cowin.testcases.TC_001VerifyVaccinationBooking">
-        <methods>
-          <include name="afterTest"/>
-          <include name="browesrlaunch"/>
-          <include name="test"/>
-        </methods>
-      </class> <!-- org.automation.cowin.testcases.TC_001VerifyVaccinationBooking -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

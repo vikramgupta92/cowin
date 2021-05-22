@@ -11,16 +11,13 @@ public class DriverIntiate {
 	public static WebDriver driver;
 
 	@BeforeClass
-	public static void browesrlaunch() throws InterruptedException {
+	public static void browserLaunch() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "//Users//vikram//Downloads//chromedriver");
 		driver = new ChromeDriver();
 		driver.get("https://www.cowin.gov.in/home");
 		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlywait(30  TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 	}
-
 	@AfterClass
 	public void afterTest() throws Exception {
 		driver.close();

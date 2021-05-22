@@ -22,36 +22,37 @@ public class BookingPage extends DriverIntiate {
 	}
 
 	public void selectState() {
-		String select_State = inputRepository.getString("selectState_xpath");
 		String select_State1 = inputRepository.getString("selectState_xpath1");
-		driver.findElement(By.xpath(select_State)).click();
 		driver.findElement(By.id(select_State1)).click();
+	}
+	
+	public void selectStateDropDown() {
+		String select_State = inputRepository.getString("selectState_xpath");
+		driver.findElement(By.xpath(select_State)).click();
 	}
 
 	public void selectDistrict() {
-		String select_District = inputRepository.getString("selectDistrict_xpath");
 		String select_District1 = inputRepository.getString("selectDistrict_xpath1");
-		driver.findElement(By.xpath(select_District)).click();
 		driver.findElement(By.id(select_District1)).click();
 	}
-
+	public void selectDistrictDropDown() {
+		String select_District = inputRepository.getString("selectDistrict_xpath");
+		driver.findElement(By.xpath(select_District)).click();
+	}
+	
 	public void searchButton() {
 		String search_Button = inputRepository.getString("searchButton_xpath");
 		driver.findElement(By.xpath(search_Button)).click();
 	}
 
-	public void getcount() {
-		String get_count = inputRepository.getString("getcount_xpath");
-		String ste = driver.findElement(By.xpath(get_count)).getText();
-		System.out.println(ste);
-	}
-
 	public void searchingBooking() throws InterruptedException {
-		Thread.sleep(5000);
 		searchByDistrict();
-		Util.ScrollDown();
-		selectState();
+		Util.scrollDown();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		selectStateDropDown();
+		selectState();
+		Thread.sleep(1000);
+		selectDistrictDropDown();
 		selectDistrict();
 		searchButton();
 	}

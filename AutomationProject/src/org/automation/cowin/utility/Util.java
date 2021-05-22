@@ -11,14 +11,13 @@ public class Util extends DriverIntiate {
 
 	ResourceBundle inputRepository = ResourceBundle.getBundle("object_repository_cowin");
 
-	public static void ScrollDown() {
+	public static void scrollDown() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,400)");
 	}
 
 	
-	
-	public void ValidateType(SoftAssert assertion ) {
+	public void validateType(SoftAssert assertion ) {
 		
 		String Actual_result = inputRepository.getString("Actual_result_xpath");
 
@@ -31,9 +30,9 @@ public class Util extends DriverIntiate {
 		if (isSame) {
 			System.out.print("\n");
 
-			System.out.println("Actaul Result is as per the Expected Result ");
+			System.out.println("Actaul Result is as per the Expected Result");
 		} else {
-			System.out.println("Actaul Result is not as per the Expected Result ");
+			System.out.println("Actaul Result is not as per the Expected Result");
 		}
 		assertion.assertTrue(ActualResult.equals(Expected_result), "Sorry, There is some error.. Actaul Result is not as per the Expected Result");
 	}

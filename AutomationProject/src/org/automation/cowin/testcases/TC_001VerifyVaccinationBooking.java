@@ -13,9 +13,9 @@ public class TC_001VerifyVaccinationBooking extends DriverIntiate {
 
 	public void test() throws InterruptedException {
 		try {
-			BookingPage bb = new BookingPage(driver);
-			bb.searchingBooking();
-			tbutil.ValidateType(Assertion);
+			BookingPage vaccinebooking = new BookingPage(driver);
+			vaccinebooking.searchingBooking();
+			tbutil.validateType(Assertion);
 			Assertion.assertAll();
 		}
 
@@ -26,6 +26,5 @@ public class TC_001VerifyVaccinationBooking extends DriverIntiate {
 			System.out.println("There is some error ... ");
 			throw e;
 		}
-
 	}
 }
