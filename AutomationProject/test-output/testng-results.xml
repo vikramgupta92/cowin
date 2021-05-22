@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="85552" started-at="2021-05-22T13:06:10Z" finished-at="2021-05-22T13:07:35Z">
+  <suite name="Default suite" duration-ms="9497" started-at="2021-05-22T15:38:24Z" finished-at="2021-05-22T15:38:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="85552" started-at="2021-05-22T13:06:10Z" finished-at="2021-05-22T13:07:35Z">
+    <test name="Default test" duration-ms="9497" started-at="2021-05-22T15:38:24Z" finished-at="2021-05-22T15:38:34Z">
       <class name="org.automation.cowin.testcases.TC_001VerifyVaccinationBooking">
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:org.automation.cowin.testcases.TC_001VerifyVaccinationBooking@598067a5]" test-instance-name="" name="browserLaunch" is-config="true" duration-ms="83045" started-at="2021-05-22T18:36:10Z" finished-at="2021-05-22T18:37:33Z">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:org.automation.cowin.testcases.TC_001VerifyVaccinationBooking@598067a5]" test-instance-name="" name="browserLaunch" is-config="true" duration-ms="7125" started-at="2021-05-22T21:08:24Z" finished-at="2021-05-22T21:08:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="test()[pri:0, instance:org.automation.cowin.testcases.TC_001VerifyVaccinationBooking@598067a5]" test-instance-name="" name="test" duration-ms="2402" started-at="2021-05-22T18:37:33Z" finished-at="2021-05-22T18:37:35Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:org.automation.cowin.testcases.TC_001VerifyVaccinationBooking@598067a5]" test-instance-name="" name="test" duration-ms="2106" started-at="2021-05-22T21:08:32Z" finished-at="2021-05-22T21:08:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:org.automation.cowin.testcases.TC_001VerifyVaccinationBooking@598067a5]" test-instance-name="" name="afterTest" is-config="true" duration-ms="79" started-at="2021-05-22T18:37:35Z" finished-at="2021-05-22T18:37:35Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:org.automation.cowin.testcases.TC_001VerifyVaccinationBooking@598067a5]" test-instance-name="" name="afterTest" is-config="true" duration-ms="225" started-at="2021-05-22T21:08:34Z" finished-at="2021-05-22T21:08:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

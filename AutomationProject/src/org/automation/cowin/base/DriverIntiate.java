@@ -12,7 +12,7 @@ public class DriverIntiate {
 
 	@BeforeClass
 	public static void browserLaunch() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "//Users//vikram//Downloads//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/vikram/cowin/AutomationProject/driver/chromedriver");
 		driver = new ChromeDriver();
 		driver.get("https://www.cowin.gov.in/home");
 		driver.manage().window().maximize();
